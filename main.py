@@ -74,3 +74,4 @@ async def post_inference(data: Data):
     )
     _inference = inference(model, data_processed)
     return {"result": apply_label(_inference)}
+    
