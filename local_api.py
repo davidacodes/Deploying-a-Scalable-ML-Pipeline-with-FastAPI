@@ -1,4 +1,3 @@
-import json
 
 import requests
 
@@ -9,7 +8,6 @@ r = requests.get("http://127.0.0.1:8000")
 print(f"Status Code: {r.status_code}")
 # print the welcome message
 print(f"Welcome Message: {r.json()['message']}")
-
 
 
 data = {

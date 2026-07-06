@@ -12,7 +12,7 @@ from ml.model import (
     save_model,
     train_model,
 )
-#load the cencus.csv data
+# load the cencus.csv data
 project_path = os.getcwd()
 data_path = os.path.join(project_path, "data", "census.csv")
 print(data_path)
@@ -62,7 +62,7 @@ save_model(encoder, encoder_path)
 # load the model
 model = load_model(
     model_path
-) 
+)
 
 # use the inference function to run the model inferences on the test dataset.
 preds = inference(model, X_test)
